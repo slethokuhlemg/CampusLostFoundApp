@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Create Student Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_green_dark"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Join Campus Lost &amp; Found to report and find items"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            style="@style/InputRounded"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/studentNumberEditText"
+            style="@style/InputRounded"
+            android:hint="Student Number"
+            android:inputType="number"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/registerEmailEditText"
+            style="@style/InputRounded"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/registerPhoneEditText"
+            style="@style/InputRounded"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/registerPasswordEditText"
+            style="@style/InputRounded"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/registerConfirmPasswordEditText"
+            style="@style/InputRounded"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp" />
+
+        <Button
+            android:id="@+id/registerSubmitButton"
+            style="@style/ButtonFilled"
+            android:text="Register"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

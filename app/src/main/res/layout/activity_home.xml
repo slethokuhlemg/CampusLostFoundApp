@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/home_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ================================================== -->
+            <!-- BLUE HEADER -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/bg_home_header"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/welcomeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello, Student 👋"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Let's help find what's lost."
+                            android:textColor="@color/home_header_secondary"
+                            android:textSize="13.5sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/notificationBell"
+                        android:text="🔔"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_notification_blue"
+                        android:padding="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ================================================== -->
+            <!-- SEARCH -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/bg_search_blue"
+                android:gravity="center_vertical"
+                android:elevation="2dp"
+                android:paddingStart="14dp"
+                android:paddingEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <TextView
+                    android:text="🔍"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:hint="Search for lost or found items..."
+                    android:background="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_primary"
+                    android:textColorHint="@color/text_secondary"
+                    android:singleLine="true"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/filterIcon"
+                    android:text="☷"
+                    android:textSize="21sp"
+                    android:textColor="@color/brand_blue"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <!-- ================================================== -->
+            <!-- REPORT ITEM CARD -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/bg_card_blue"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="18dp"
+                android:elevation="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Lost something?"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/navy_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Report your lost item and let the campus community help you find it."
+                        android:textSize="13sp"
+                        android:textColor="@color/text_secondary"
+                        android:lineSpacingExtra="2dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/reportButton"
+                        android:text="Report Item"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="13sp"
+                        android:background="@drawable/bg_button_blue"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp"
+                        android:layout_width="140dp"
+                        android:layout_height="44dp"
+                        android:layout_marginTop="14dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:text="🔎"
+                    android:textSize="48sp"
+                    android:gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"/>
+
+            </LinearLayout>
+
+            <!-- ================================================== -->
+            <!-- CATEGORIES -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Browse Categories"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/navy_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Find items by category"
+                        android:textSize="12.5sp"
+                        android:textColor="@color/text_secondary"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/viewAllText"
+                    android:text="View all"
+                    android:textSize="13.5sp"
+                    android:textColor="@color/brand_blue"
+                    android:textStyle="bold"
+                    android:padding="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- ================================================== -->
+            <!-- CATEGORY ROW -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/catElectronics"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_category_blue">
+
+                        <TextView
+                            android:text="📱"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:text="Electronics"
+                        android:textSize="11.5sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_secondary"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/catBooks"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_category_sky">
+
+                        <TextView
+                            android:text="📚"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:text="Books"
+                        android:textSize="11.5sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_secondary"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/catAccessories"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_category_cyan">
+
+                        <TextView
+                            android:text="⌚"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:text="Accessories"
+                        android:textSize="11.5sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_secondary"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/catOthers"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/bg_category_light_blue">
+
+                        <TextView
+                            android:text="•••"
+                            android:textSize="18sp"
+                            android:textColor="@color/brand_blue"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <TextView
+                        android:text="Others"
+                        android:textSize="11.5sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_secondary"
+                        android:gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- ================================================== -->
+            <!-- RECENTLY FOUND -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Recently Found"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/navy_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Latest approved items reported as found"
+                    android:textSize="12.5sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentFoundRecyclerView"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:paddingBottom="4dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_empty_state"
+                android:padding="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="🔎"
+                    android:textSize="28sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/emptyRecentText"
+                    android:text="No recently found items."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <!-- ================================================== -->
+            <!-- RECENTLY REPORTED -->
+            <!-- ================================================== -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="26dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Recently Reported"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/navy_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Latest approved lost items reported by students"
+                    android:textSize="12.5sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recentReportedRecyclerView"
+                android:layout_marginTop="12dp"
+                android:clipToPadding="false"
+                android:paddingBottom="4dp"
+                android:nestedScrollingEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_empty_state"
+                android:padding="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="📢"
+                    android:textSize="28sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/emptyReportedText"
+                    android:text="No recently reported lost items."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- ================================================== -->
+    <!-- BOTTOM NAVIGATION -->
+    <!-- ================================================== -->
+
+    <include
+        layout="@layout/layout_bottom_nav"/>
+
+</LinearLayout>

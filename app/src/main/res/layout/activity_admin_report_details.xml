@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/adminDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Pending"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/adminReportImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Uploaded report photo" />
+
+        <TextView
+            android:id="@+id/adminDetailType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type: Lost"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category: Laptop"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailPriority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Priority"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI Score"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/adminDetailReporter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reporter information"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- APPROVE -->
+
+        <Button
+            android:id="@+id/approveButton"
+            android:backgroundTint="@color/success_green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Approve Report"
+            android:layout_marginBottom="10dp" />
+
+        <!-- REJECT -->
+
+        <Button
+            android:id="@+id/rejectButton"
+            android:backgroundTint="@color/error_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reject Report"
+            android:layout_marginBottom="10dp" />
+
+        <!-- RESOLVE LOST ITEM -->
+
+        <Button
+            android:id="@+id/resolveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark as Resolved"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp" />
+
+        <!-- CLAIM FOUND ITEM -->
+
+        <Button
+            android:id="@+id/claimButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark as Claimed"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp" />
+
+        <!-- DELETE -->
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:backgroundTint="@color/error_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Report"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

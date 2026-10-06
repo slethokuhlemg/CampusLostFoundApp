@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.campuslostfound'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.campuslostfound"
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:34.2.0')
+
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Cloud Firestore
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // Firebase Storage
+    implementation 'com.google.firebase:firebase-storage'
+
+    // Firebase Cloud Messaging
+    implementation 'com.google.firebase:firebase-messaging'
+}

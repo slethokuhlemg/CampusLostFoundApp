@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_welcome_screen"
+    android:padding="32dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1.3" />
+
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_circle_outline_white">
+
+        <FrameLayout
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_circle_white_border">
+
+            <TextView
+                android:text="🔍"
+                android:textSize="40sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:text="CAMPUS"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/surface_white"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="28dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="LOST &amp; FOUND"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/surface_white"
+        android:letterSpacing="0.02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Reuniting lost items"
+        android:textSize="15sp"
+        android:textColor="@color/home_header_secondary"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="with their owners"
+        android:textSize="15sp"
+        android:textColor="@color/home_header_secondary"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- GET STARTED -->
+    <Button
+        android:id="@+id/getStartedButton"
+        android:text="Get Started"
+        android:textColor="@color/brand_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_welcome_button_filled"
+        android:backgroundTint="@null"
+        android:minHeight="52dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <!-- LOGIN -->
+    <Button
+        android:id="@+id/loginButton"
+        android:text="Login"
+        android:textColor="@color/brand_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_welcome_button_outline"
+        android:backgroundTint="@null"
+        android:minHeight="52dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <!-- LOGIN AS ADMIN -->
+    <Button
+        android:id="@+id/adminLoginButton"
+        android:text="Login as Admin"
+        android:textColor="@color/brand_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_welcome_button_admin"
+        android:backgroundTint="@null"
+        android:minHeight="52dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+</LinearLayout>

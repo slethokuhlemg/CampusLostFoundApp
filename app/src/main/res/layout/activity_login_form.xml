@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="@android:color/transparent"
+            android:contentDescription="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Student Login"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_green_dark"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Welcome back to Campus Lost &amp; Found"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            style="@style/InputRounded"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="28dp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            style="@style/InputRounded"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp"
+            android:importantForAutofill="no" />
+
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:text="Forgot Password?"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_green_dark"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:layout_marginTop="14dp"
+            android:padding="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/loginSubmitButton"
+            style="@style/ButtonFilled"
+            android:text="Login"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

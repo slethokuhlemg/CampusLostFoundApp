@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/home_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- BLUE HEADER -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="18dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:background="@drawable/bg_home_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/backButton"
+            android:text="‹"
+            android:textSize="38sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="sans"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Notifications"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Stay updated with your reports"
+                android:textSize="13sp"
+                android:textColor="@color/home_header_secondary"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- NOTIFICATIONS -->
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- SECTION TITLE -->
+
+            <TextView
+                android:text="Your Notifications"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/navy_blue"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <!-- NOTIFICATION LIST -->
+
+            <LinearLayout
+                android:id="@+id/notificationsContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+            <!-- EMPTY STATE -->
+
+            <TextView
+                android:id="@+id/emptyText"
+                android:text="You have no notifications."
+                android:textSize="15sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center"
+                android:background="@drawable/bg_empty_state"
+                android:visibility="gone"
+                android:padding="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

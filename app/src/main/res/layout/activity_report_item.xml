@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Report an Item"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_green_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="I want to report a:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/typeSpinner"
+            style="@style/InputRounded"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:text="Category"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            style="@style/InputRounded"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:text="Item Details"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/titleEditText"
+            style="@style/InputRounded"
+            android:hint="Item title e.g. Black HP Laptop"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:hint="Describe the item"
+            android:minLines="4"
+            android:gravity="top"
+            android:background="@drawable/bg_input"
+            android:padding="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/locationEditText"
+            style="@style/InputRounded"
+            android:hint="Where was it lost/found?"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/lostDateLabel"
+            android:text="Date Lost"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/lostDateButton"
+            style="@style/ButtonOutline"
+            android:text="Select Date Lost"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/photoLabel"
+            android:text="Upload Photo (optional)"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/photoButton"
+            style="@style/ButtonOutline"
+            android:text="Select Photo"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/photoStatusText"
+            android:text="No photo selected"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/ButtonFilled"
+            android:text="Analyse &amp; Submit"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

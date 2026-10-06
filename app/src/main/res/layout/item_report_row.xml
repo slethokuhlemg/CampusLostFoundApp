@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/bg_card_white"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- ================================================== -->
+    <!-- ITEM PHOTO / ICON -->
+    <!-- ================================================== -->
+
+    <FrameLayout
+        android:layout_width="52dp"
+        android:layout_height="52dp">
+
+        <View
+            android:background="@drawable/bg_circle_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/rowImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/rowLetter"
+            android:textColor="@color/brand_blue_dark"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <!-- ================================================== -->
+    <!-- ITEM INFORMATION -->
+    <!-- ================================================== -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="14dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/rowTitle"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rowSubtitle"
+            android:textSize="12.5sp"
+            android:textColor="@color/text_secondary"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ================================================== -->
+        <!-- MARK AS RECOVERED -->
+        <!-- ================================================== -->
+
+        <Button
+            android:id="@+id/rowRecoveredButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:text="Mark as Recovered"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/brand_blue"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- ================================================== -->
+    <!-- STATUS -->
+    <!-- ================================================== -->
+
+    <TextView
+        android:id="@+id/rowStatus"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:textColor="@color/brand_blue_dark"
+        android:background="@drawable/bg_chip"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

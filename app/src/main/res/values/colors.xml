@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- ========================= -->
+    <!-- BLUE APP THEME -->
+    <!-- ========================= -->
+
+    <color name="brand_blue">#1E6FD9</color>
+    <color name="brand_blue_dark">#1E6FD9</color>
+    <color name="brand_sky_blue">#3B9CF0</color>
+    <color name="brand_cyan">#3B9CF0</color>
+
+    <!-- ========================= -->
+    <!-- OLD GREEN NAMES -->
+    <!-- Kept for compatibility -->
+    <!-- with existing layouts -->
+    <!-- ========================= -->
+
+    <color name="brand_green">#1E6FD9</color>
+    <color name="brand_green_dark">#14213D</color>
+
+    <!-- ========================= -->
+    <!-- BACKGROUNDS -->
+    <!-- ========================= -->
+
+    <color name="home_background">#F5F9FF</color>
+    <color name="surface_white">#FFFFFF</color>
+
+    <!-- ========================= -->
+    <!-- TEXT -->
+    <!-- ========================= -->
+
+    <color name="navy_blue">#14213D</color>
+    <color name="text_primary">#14213D</color>
+    <color name="text_secondary">#5B6B85</color>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <color name="home_header_secondary">#EAF3FF</color>
+
+    <!-- ========================= -->
+    <!-- COMMON -->
+    <!-- ========================= -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="border_grey">#D6E4F7</color>
+
+    <!-- ========================= -->
+    <!-- STATUS COLOURS -->
+    <!-- ========================= -->
+
+    <color name="success_green">#2BA67A</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="error_red">#D64545</color>
+    <color name="brand_green_pale">#EAF3FF</color>
+    <color name="brand_green_light">#E1ECFA</color>
+    <color name="surface_grey">#EAF3FF</color>
+
+</resources>

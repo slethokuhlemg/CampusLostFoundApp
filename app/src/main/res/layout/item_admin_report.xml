@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/surface_white">
+
+    <TextView
+        android:id="@+id/adminReportTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/adminReportType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type: Lost"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/adminReportCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category: Laptop" />
+
+    <TextView
+        android:id="@+id/adminReportLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: Campus" />
+
+    <TextView
+        android:id="@+id/adminReportStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Pending"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>
